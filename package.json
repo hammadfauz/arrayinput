@@ -1,6 +1,6 @@
 {
   "name": "arrayinput",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Component that provides input methods for lists and arrays",
   "main": "dist/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-fontawesome": "^1.6.1",
-    "react_tags": "^1.0.0",
+    "react_tags": "^1.0.1",
     "textfield": "^1.0.4",
     "webpack": "^3.10.0"
   },
