@@ -136,5 +136,5 @@ ArrayInput.propTypes = {
   onSearch : PropTypes.func,
   dataSource : PropTypes.array,
   delStyle : PropTypes.object
-},
-module.exports = ArrayInput;
+};
+export default ArrayInput;
