@@ -81,12 +81,11 @@ class ArrayInput extends React.Component {
       }
     };
     styles.delBtn = Object.assign({},styles.delBtn,this.props.delStyle);
-    styles.lookupTextField = Object.assign({},styles.lookupTextField,this.props.inputStyle);
-    styles.inputs = Object.assign({},styles.inputs,this.props.inputStyle);
 
     return (<div style={styles.main}>
       {self.props.lookup?
         <LookupField label={self.props.label}
+          inputStyle={self.props.inputStyle}
           style={styles.inputs}
           textFieldStyle={styles.lookupTextField}
           pseudoStyle={styles.pseudo}
@@ -99,6 +98,7 @@ class ArrayInput extends React.Component {
           onSearch={self.props.onSearch.bind(self)}
           dataSource={self.props.dataSource} />
         :<TextField label={self.props.label}
+          inputStyle={self.props.inputStyle}
           style={styles.inputs}
           pseudoStyle={styles.pseudo}
           topLabel={self.props.topLabel}
@@ -138,6 +138,5 @@ ArrayInput.propTypes = {
   onSearch : PropTypes.func,
   dataSource : PropTypes.array,
   delStyle : PropTypes.object,
-  inputStyle : PropTypes.object
 };
 export default ArrayInput;
