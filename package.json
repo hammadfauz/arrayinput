@@ -1,6 +1,6 @@
 {
   "name": "arrayinput",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "React Component that provides input methods for lists and arrays",
   "main": "dist/index.js",
   "scripts": {
