@@ -570,9 +570,13 @@ var ArrayInput = function (_React$Component) {
       var self = this;
       return new Promise(function (res, rej) {
         if (newValue !== null) {
-          self.setState({ displayText: newValue }, res);
+          self.setState({ displayText: newValue }, function () {
+            res();
+          });
         } else {
-          self.setState({ displayText: self.props.dataSource[selectedIndex] }, res);
+          self.setState({ displayText: self.props.dataSource[selectedIndex] }, function () {
+            res();
+          });
         }
       });
     }
