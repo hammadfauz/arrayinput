@@ -81,6 +81,8 @@ class ArrayInput extends React.Component {
       }
     };
     styles.delBtn = Object.assign({},styles.delBtn,this.props.delStyle);
+    styles.lookupTextField = Object.assign({},styles.lookupTextField,this.props.inputStyle);
+    styles.inputs = Object.assign({},styles.inputs,this.props.inputStyle);
 
     return (<div style={styles.main}>
       {self.props.lookup?
@@ -135,6 +137,7 @@ ArrayInput.propTypes = {
   template : PropTypes.func,
   onSearch : PropTypes.func,
   dataSource : PropTypes.array,
-  delStyle : PropTypes.object
+  delStyle : PropTypes.object,
+  inputStyle : PropTypes.object
 };
 export default ArrayInput;

@@ -636,6 +636,8 @@ var ArrayInput = function (_React$Component) {
         }
       };
       styles.delBtn = Object.assign({}, styles.delBtn, this.props.delStyle);
+      styles.lookupTextField = Object.assign({}, styles.lookupTextField, this.props.inputStyle);
+      styles.inputs = Object.assign({}, styles.inputs, this.props.inputStyle);
 
       return _react2.default.createElement(
         'div',
@@ -693,7 +695,8 @@ ArrayInput.propTypes = {
   template: _propTypes2.default.func,
   onSearch: _propTypes2.default.func,
   dataSource: _propTypes2.default.array,
-  delStyle: _propTypes2.default.object
+  delStyle: _propTypes2.default.object,
+  inputStyle: _propTypes2.default.object
 };
 exports.default = ArrayInput;
 
