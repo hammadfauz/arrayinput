@@ -43,7 +43,7 @@ class ArrayInput extends React.Component {
     });
   }
   addItem () {
-    if (this.state. displayText != '') {
+    if (this.state.displayText != '') {
       this.props.onChange(-1,this.state.displayText);
       this.setState({displayText : ''});
     }
