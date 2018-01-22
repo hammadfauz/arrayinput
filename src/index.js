@@ -44,6 +44,8 @@ class ArrayInput extends React.Component {
     const self = this;
     this.handleChange(newValue,selectedIndex).then(function () {
       self.addItem();
+    }).catch(function (err) {
+      console.log(err);
     });
   }
   addItem () {
